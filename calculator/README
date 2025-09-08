@@ -1,0 +1,10 @@
+# A basic calculator that does addition, subtraction, multiplication, and division.
+
+# Mistakes I fixed: 
+1. Initially my logic required variables(fn, sn, ...) making it impossible to operate on as many numbers as I want
+2. When using the first number as the ans, I declared it inside the loop making it restart everytime
+3. After checking for the operator the first time i checked for True instead for false and used one if..elif condition so if the user DIDN'T ask for the result it would return true and skip the rest of the conditions
+
+#Mistakes I didn't fix
+1. the program ooperates sequentially without respecting the order of operations (PEMDAS/BODMAS)
+2. the program doesn't handle invalid inputs (e.g. letters instead of numbers)
