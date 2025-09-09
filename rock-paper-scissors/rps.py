@@ -1,34 +1,39 @@
-import random 
+# Rock-Paper-scissors game with the computer
 
-myMove = ""
+import random #<--import module 
 
-def pickMove():
+bestOut = int(input("Best out of: ")) 
+
+userScore = 0      #<-- variables to keep track of scores
+compScore = 0
+
+for i in range(bestOut):   #<--loop in range the user input
+    userMove = str(input("Pick ur move: ")).lower()   #<--user picks move
     moves = ["rock", "paper", "scissors"]
-    myMove = str(random.choice(moves))
-    return myMove
+    compMove = str(random.choice(moves)) #<--variable holds a random chose move the list
 
-urMove = str(input("Pick ur move: "))
+    #check who won and add score accordingly
+    if (userMove == "rock" and compMove == "paper") or \
+    (userMove == "paper" and compMove == "scissors") or \
+    (userMove == "scissors" and compMove == "rock"):
+        compScore += 1    
+        print(f"comp move was {compMove} you lose")
 
-myMove = pickMove()
+    elif (compMove == "rock" and userMove == "paper") or \
+    (compMove == "paper" and userMove == "scissors") or \
+    (compMove == "scissors" and userMove == "rock"):
+        userScore += 1
+        print(f"comp move was {compMove} you won")
 
-if urMove == "rock" and myMove == "paper":
-    print(f"My move was {myMove} you lost")
+    elif userMove == compMove:
+        userScore += 1
+        compScore += 1
+        print("Its a tie.")
 
-elif urMove == "paper" and myMove == "scissors":
-    print(f"My move was {myMove} you lost")
+    else:
+        print("Invalid move")
 
-elif urMove == "scissors" and myMove == "rock":
-    print(f"My move was {myMove} you lost")
-elif myMove == "rock" and urMove == "paper":
-    print(f"My move was {myMove} you won")
+print(f"Your score: {userScore}, computer's score: {compScore}")
 
-elif myMove == "paper" and urMove == "scissors":
-    print(f"My move was {myMove} you won")
-
-elif myMove == "scissors" and urMove == "rock":
-    print(f"My move was {myMove} you won")
-
-else:
-    print("Invalid move")
  
 
