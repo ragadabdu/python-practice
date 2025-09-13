@@ -8,7 +8,6 @@ def calculate():
         if op == "=": #<-- breaking the loop if the user asks for the result "="
             break
         sn = float(input("enter next num: ")) #<-- if not ask for the next num
-
         if op == "-":
             ans -= sn
         elif op == "x":
