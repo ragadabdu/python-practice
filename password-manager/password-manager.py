@@ -1,10 +1,10 @@
 # Password-manager program
-
 import random, string #<--import modules , string = 
 
 accInfo = [] #<--a list for accounts
 
 def generate_password(length=8):  #<--function to generate random passwords in 8 charachters, diff set of  upper case, lower case and digits
+  
     characters = string.ascii_letters + string.digits 
     return ''.join(random.choice(characters) for _ in range(length))
 
