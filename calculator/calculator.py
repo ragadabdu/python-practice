@@ -1,23 +1,12 @@
 # A simple calculator program
 
-fn = float(input("enter first num: "))
-ans = fn
+def calculate():
+    expr = input("Enter an expression (e.g. 2 + 3 * 4 - 5): ")
+    try:
+        result = eval(expr) #<--evaluates string as python code
+        print("Result =", result)
+    except Exception as e:
+        print("Error:", e)
 
-while True:
-    op = input("enter operator: ")
-    if op == "=":
-        break
-    sn = float(input("enter next num: "))
-
-    if op == "-":
-        ans -= sn
-    elif op == "x":
-        ans *= sn
-    elif op == "/":
-        ans/= sn
-    elif op == "+":
-        ans += sn
-    else:
-        print("invalid operator")
     
-print("result = ", ans)
+
