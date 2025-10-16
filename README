@@ -1,0 +1,51 @@
+# Python-Practice-Programs
+This repository contains 5 Python programs created for practice and learning purposes. 
+
+# focuses on
+  -different aspects of Python, such as working with time, data structures, loops, and user input. 
+  -intended for beginners and intermediate learners to improve their Python skills.
+
+1. Alarm Clock
+A simple alarm clock that takes user input for the time and notifies the user when it’s time to wake up.
+
+Features:
+--Accepts alarm time in HH:MM:SS format.
+--Continuously checks the current time.
+--Alerts the user when the alarm time is reached.
+
+2. Simple Calculator
+A program that evaluates arithmetic expressions entered by the user.
+
+Features:
+--Allows the user to input a full expression, e.g., 2 + 3 * 4 - 5.
+--Uses Python’s eval() function to calculate the result.
+--Handles errors gracefully if the input expression is invalid.
+
+3. Password Manager
+A program to securely store and manage account passwords.
+
+Features:
+--Allows users to add, view, and delete account credentials.
+--Can generate strong random passwords with a mix of uppercase, lowercase letters, and digits.
+--Validates user-entered passwords for strength (minimum 8 characters, includes uppercase, lowercase, and digits).
+--Stores account information in a list of dictionaries for easy management.
+
+4. Rock-Paper-Scissors Game
+A simple interactive game where the user plays against the computer.
+
+Features:
+--User selects their move: rock, paper, or scissors.
+--Computer randomly selects its move.
+--The program compares moves to determine the winner of each round.
+--Scores are tracked, and the final result is displayed after the user-defined number of rounds.
+--Handles invalid inputs gracefully and allows for ties.
+
+5. To-Do List
+A program to manage daily tasks and deadlines.
+
+Features:
+--Users can add, view, mark complete, delete, and reset due dates for tasks.
+--Tasks are stored as a list of dictionaries, each containing the task name, state (incomplete or complete), and due date.
+--Provides a simple interactive menu for task management.
+--Allows users to track progress and organize tasks efficiently.
+
