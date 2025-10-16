@@ -21,3 +21,5 @@ def calculate():
             print("invalid operator")
     
     print("result = ", ans) 
+
+calculate()

@@ -17,18 +17,18 @@ for i in range(bestOut):   #<--loop in range the user input
     (userMove == "paper" and compMove == "scissors") or \
     (userMove == "scissors" and compMove == "rock"):
         compScore += 1    
-        print(f"comp move was {compMove} you lose")
+        print(f"My move was {compMove}, you lose")
 
     elif (compMove == "rock" and userMove == "paper") or \
     (compMove == "paper" and userMove == "scissors") or \
     (compMove == "scissors" and userMove == "rock"):
         userScore += 1
-        print(f"comp move was {compMove} you won")
+        print(f"My move was {compMove}, you won")
 
     elif userMove == compMove:
         userScore += 1
         compScore += 1
-        print("Its a tie.")
+        print(f'Its a tie. My move was {compMove}')
 
     else:
         print("Invalid move")
