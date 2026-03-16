@@ -1,8 +1,8 @@
 # 🐍 Python Practice Programs
 
-Welcome to Python Practice Programs! This repository is a playground for experimenting with Python, sharpening your skills, and building small, fun projects. Whether you’re a beginner or brushing up on your Python knowledge, these programs will help you practice key concepts like loops, user input, data structures, and more.
+Welcome to Python Practice Programs! This repository is a playground for experimenting with Python. These programs will help you practice key concepts like loops, user input, data structures, and more.
 
-## 🔍 What You’ll Explore
+## 🔍 What I Explored
 
 Time management: Work with Python’s datetime module.
 
@@ -80,7 +80,7 @@ Handles ties and invalid inputs gracefully.
 
 ### 6️⃣ To-Do List 📝
 
-Organize your tasks and stay productive.
+Organize tasks and stay productive.
 
 Features:
 Add, view, mark complete, delete, and reset tasks.
